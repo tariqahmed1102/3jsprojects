@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #stopwatch,
+        #counter,
+        #calender{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="counter">
+    <h1>Counter
+    </h1>
+    <input id="counterValue" type="text">
+   <button id="incrementBtn">+</button>
+   <button id="decrementBtn">-</button>
+   <button id="resetBtn">reset</button>
+</div>
+<div id="stopwatch">
+    <h1>Stopwatch</h1>
+    <div id="display"></div>
+    <button id="startWatch">Start</button>
+    <button id="stopWatch">Stop</button>
+    <button id="ResetWatch">Reset</button>
+</div>
+<div id="calender">
+    <h1>calender
+    </h1>
+    
+</div>
+<div>
+    <button onclick="showCounter()">Counter App</button>
+    <button onclick="showStopwatch()">stopwatch App</button>
+    <button onclick="showCalender()">calender App</button>
+</div>
+   
+</body>
+<script src="index.js"></script>
+</html>
