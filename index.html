@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #stopwatch,
-        #counter,
-        #calender{
-            display: none;
-        }
-    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #stopwatch,
+            #counter,
+            #calender{
+                display: none;
+            }
+            </style>
 </head>
 <body>
+    <div>
+        <button onclick="showCounter()">Counter App</button>
+        <button onclick="showStopwatch()">stopwatch App</button>
+        <button onclick="showCalender()">calender App</button>
+    </div>
 <div id="counter">
     <h1>Counter
     </h1>
@@ -29,14 +34,44 @@
     <button id="ResetWatch">Reset</button>
 </div>
 <div id="calender">
-    <h1>calender
-    </h1>
-    
+    <h1>calender </h1>
+    <div id="calenderbox"  style="width: 300px;
+height: 250px;
+background: #fff;
+display: flex;
+align-items: center;
+border-radius: 10px;">
+    <div id="left"
+     style="height: 100%;
+     display:flex;align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    width: 58%;
+">
+
+        <p id="date" style="font-size: 100px;
+        line-height: 90px;"></p>
+        <p id="day" ></p>
+
+    </div>
+    <div id="right"
+    style="height: 100%;
+     display:flex;align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    background: #f4351e;
+  color: #fff;
+  width: 42%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;">
+
+        <p id="month"></p>
+        <p id="year"></p>
+
+    </div>
 </div>
-<div>
-    <button onclick="showCounter()">Counter App</button>
-    <button onclick="showStopwatch()">stopwatch App</button>
-    <button onclick="showCalender()">calender App</button>
 </div>
    
 </body>
