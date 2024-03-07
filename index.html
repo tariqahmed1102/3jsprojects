@@ -18,59 +18,61 @@
         <button onclick="showStopwatch()">stopwatch App</button>
         <button onclick="showCalender()">calender App</button>
     </div>
-<div id="counter">
-    <h1>Counter
-    </h1>
-    <input id="counterValue" type="text">
-   <button id="incrementBtn">+</button>
-   <button id="decrementBtn">-</button>
-   <button id="resetBtn">reset</button>
-</div>
-<div id="stopwatch">
-    <h1>Stopwatch</h1>
-    <div id="display"></div>
-    <button id="startWatch">Start</button>
-    <button id="stopWatch">Stop</button>
-    <button id="ResetWatch">Reset</button>
-</div>
-<div id="calender">
-    <h1>calender </h1>
-    <div id="calenderbox"  style="width: 300px;
-height: 250px;
-background: #fff;
-display: flex;
-align-items: center;
-border-radius: 10px;">
-    <div id="left"
-     style="height: 100%;
-     display:flex;align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 24px;
-    width: 58%;
-">
-
-        <p id="date" style="font-size: 100px;
-        line-height: 90px;"></p>
-        <p id="day" ></p>
-
+    <div id="counter" style="text-align: center; margin: 20px;">
+        <h1 style="margin-bottom: 10px;">Counter</h1>
+        <input id="counterValue" type="text" style="padding: 10px; font-size: 16px; text-align: center; width: 80px; margin-bottom: 10px;">
+        <button id="incrementBtn" style="padding: 10px 20px; font-size: 16px; margin-right: 5px;">+</button>
+        <button id="decrementBtn" style="padding: 10px 20px; font-size: 16px; margin-right: 5px;">-</button>
+        <button id="resetBtn" style="padding: 10px 20px; font-size: 16px;">Reset</button>
     </div>
-    <div id="right"
-    style="height: 100%;
-     display:flex;align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 24px;
-    background: #f4351e;
-  color: #fff;
-  width: 42%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;">
-
-        <p id="month"></p>
-        <p id="year"></p>
-
+<div id="stopwatch" style="text-align: center; padding: 20px;">
+    <h1 style="margin-bottom: 20px;">Stopwatch</h1>
+    <div id="display" style="font-size: 36px; margin-bottom: 20px;"></div>
+    <button id="startWatch" style="padding: 10px 20px; font-size: 16px; margin-right: 10px;">Start</button>
+    <button id="stopWatch" style="padding: 10px 20px; font-size: 16px; margin-right: 10px;">Stop</button>
+    <button id="ResetWatch" style="padding: 10px 20px; font-size: 16px;">Reset</button>
+</div>
+<div id="calender" style="text-align: center;">
+    <h1>Calendar</h1>
+    <div id="calendarBox" style="width: 300px;
+                                  height: 250px;
+                                  background: gray;
+                                  display: flex;
+                                  align-items: center;
+                                  justify-content: center;
+                                  border-radius: 10px;
+                                  margin: 0 auto;
+                                  position: absolute;
+                                  top: 50%;
+                                  left: 50%;
+                                  transform: translate(-50%, -50%);">
+        <div id="left" style="height: 100%;
+                               display: flex;
+                               align-items: center;
+                               justify-content: center;
+                               flex-direction: column;
+                               font-size: 24px;
+                               width: 58%;
+                               color: #fff;"> 
+            <p id="date" style="font-size: 100px;"></p>
+            <p id="day" style="color: #000;"></p>
+        </div>
+        <div id="right" style="height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-direction: column;
+                                font-size: 24px;
+                                background: #f4351e;
+                                color: #fff;
+                                width: 42%;
+                                border-top-right-radius: 10px;
+                                border-bottom-right-radius: 10px;">
+            <p id="month"></p>
+            <p id="year"></p>
+        </div>
     </div>
+</div>
 </div>
 </div>
    
